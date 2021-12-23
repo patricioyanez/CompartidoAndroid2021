@@ -1,11 +1,9 @@
 Proceso sin_titulo
 	//Actividad 3:	
 	// promediar 3 notas y mostrar si aprobo o no el curso. nota <=40
-	// Definir  las variables a utilizar
-	
+	// Definir  las variables a utilizar	
 	// validar que las notas no superen el 7 (70) y
-	// ademas la ponderación de las nota son 30%, 30% y 40% 
-	
+	// ademas la ponderación de las nota son 30%, 30% y 40% 	
 	Definir Nota1 Como Real;
 	Definir Nota2 Como Real;
 	Definir Nota3 Como Real;
@@ -20,7 +18,9 @@ Proceso sin_titulo
 	Leer Nota3;
 	//Calcular Promedio
 	Nota1 <- Nota1 * 0.3; 
-	Promedio <- (Nota1 + Nota2 + Nota3) / 3;
+	Nota2 <- Nota2 * 0.3; 
+	Nota3 <- Nota3 * 0.4; 
+	Promedio <- (Nota1 + Nota2 + Nota3);
 	// Mostrar si esta aprobado o reprobado
 	Si Promedio >= 4 Entonces
 		Escribir "Nota Promedio es: ", Promedio;
@@ -28,7 +28,5 @@ Proceso sin_titulo
 	Sino
 		Escribir "Nota Promedio es: ", Promedio;
 		Escribir "Ud a Reprobado";
-	FinSi
-
-	
+	FinSi	
 FinProceso
