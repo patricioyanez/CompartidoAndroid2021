@@ -1,0 +1,18 @@
+Trabajos de portafolio 
+
+Semana 1:
+1.- Ordenar algoritmo para tomar un cafe (word en github)
+2.- Crear un algoritmo para hacer un queque
+3.- Desarrollar pseudocodigo (pseint) que permita promediar 3 notas.
+
+
+Semana 2:
+1.- Usar pseInt: Solicitar 2 numeros y mostrar cual es el mayor.
+2.- Usar pseInt: Solicitar 2 numeros y preguntar que operacion matematica basica quiere realizar
+3.- Usar pseInt: Promediar 3 notas con ponderación 30% para la primera y segunda, 40% para la tercera.
+4.- Crear en PseInt que permita ingresar el valor de una compra y realizar descuentos de acuerdo a las siguientes indicaciones:
+	Si el valor es mayor o igual a $50000, se hace un descuento del 30%.
+	Si el valor es menor de $50000 y mayor o igual a $20000, se descuenta el 20%.
+	Si el monto es menor a $20000 y mayor o igual a $10000, el descuento es del 10%.
+5.- Crear una calculadora con las operaciones básicas (/*-+) y que mediante un menú se pueda seleccionar, debe haber una
+opción de salida. solicitar 2 numeros. Menu: +, - , *,  /,  Salir (5). opcional validar que solo ingrese las opciones del menú
