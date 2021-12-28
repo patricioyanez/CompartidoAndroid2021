@@ -25,5 +25,6 @@ Proceso sin_titulo
 			Esperar Tecla;
 		FinSi
 	FinMientras
+	Limpiar Pantalla;
 	Escribir "Cierre del ciclo Mientras y de la aplicación";
 FinProceso
