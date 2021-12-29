@@ -16,7 +16,7 @@ public class Principal {
 		apellido = leer.next();
 		System.out.print("Ingrese su edad    : ");
 		edad = leer.nextInt();
-		System.out.println("Tú nombre y apellido es " + nombre + " " + apellido);
+		System.out.println("Tú nombre y apellido es " + nombre.toUpperCase() + " " + apellido.toLowerCase());
 		System.out.println("Tú edad es " + edad + " años" );
 		
 		// como convertir a mayuscula los textos. 
