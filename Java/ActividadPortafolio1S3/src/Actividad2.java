@@ -28,34 +28,37 @@ public class Actividad2 {
 			String genero;
 			int celular;
 			int edad;
-
+			
+			// obtiene los datos o lee el teclado
 			Scanner leer= new Scanner(System.in);
 
-			System.out.println("Ingrese el primer nombre");
+			System.out.println("Ingrese el primer nombre       : ");
 			//Leer Teclado;
 			nombre = leer.next();
 
-			System.out.println("Ingrese su genero M o F");
+			System.out.println("Ingrese su genero (M)Mujer, (H)Hombre u (O)omitir: ");
 			//Leer Teclado;
 			genero = leer.next();
-			genero=genero.toUpperCase();
+			genero = genero.toUpperCase(); // m != M "case sensitive"
 
-			System.out.println("Ingrese su numero de celular");
+			System.out.println("Ingrese su numero de celular: ");
 			//Leer Teclado;
-			celular = leer.nextInt();
+			celular = leer.nextInt(); // 9 65 465 456
 
-			System.out.println("Ingrese su edad");
+			System.out.println("Ingrese su edad: ");
 			//Leer Teclado;
 			edad = leer.nextInt();
 
-
-			if (genero=="M") {
-
-			System.out.print(nombre + " " + celular);
+//			if (genero.equals("M")) {
+//			if (genero.equalsIgnoreCase("M")) { 
+//			if (genero.equals("m") || genero.equals("M")) {
+			if (genero.toUpperCase().equals("M")) {				
+				System.out.print("Su nombre es: " + nombre + 
+								" y su celular es: " + celular);
 			}
-
-			else {
-			System.out.print(nombre + " " + edad);
+			else {			
+				System.out.print("Su nombre es: " + nombre + 
+						" y su edad es: " + edad);
 			}
 
 		}
