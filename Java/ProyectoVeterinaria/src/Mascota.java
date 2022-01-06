@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class Mascota { 
 	// 1.- Atributos. (5) // genericos
@@ -104,5 +105,25 @@ public class Mascota {
 				return "necesita la vacuna óctuple";
 		}
 	}
+	public void ingresoDeDatosPorTeclado()
+	{
+		Scanner leerTeclado = new Scanner(System.in);
+		System.out.println("**** Ingrese los datos de la Mascota ****");
+		System.out.print("Nombre : ");
+		this.nombre = leerTeclado.next();
+		System.out.print("Tipo   : ");
+		this.tipo = leerTeclado.next();
+		System.out.print("Raza   : ");
+		this.raza= leerTeclado.next();
+		System.out.print("Edad   : ");
+		this.edad = leerTeclado.nextInt();
+		System.out.print("Dueño  : ");
+		this.dueno = leerTeclado.next();
+		System.out.print("Peso   : ");
+		this.peso = leerTeclado.nextDouble();
+		System.out.print("Vacunas: ");
+		this.vacunasAlDia = leerTeclado.nextBoolean();
+	}
+	
 
 }
