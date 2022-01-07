@@ -124,20 +124,20 @@ public class Cliente {
 					{
 						if(sueldo > 250000)
 						{
-							if(antiguedadLaboral > 3)
+							if(antiguedadLaboral >= 3)
 							{
 								if(morosidad == false)
 								{
-									return "--------------------------------"
-									+ nombre.toUpperCase() + " " + apellido.toUpperCase() + " " + rut
-									+ "--------------------------------" 
-									+ "Cumple con los requisitos" 
-									+ "Sueldo : " + sueldo 
-									+ "Monto máximo : " + sueldo * 10 
-									+ "Monto Solicitado : " + montoCredito 
-									+ "Tasa Mensual : 1,46%" 
-									+ "N° de Cuotas : " + cuotas 
-									+ "Monto a pagar: " + (montoCredito * 1.46) ;
+									return "-------------------------------- \n"
+									+ nombre.toUpperCase() + " " + apellido.toUpperCase() + " " + rut + "-" + dv + "\n" 
+									+ "--------------------------------"  + "\n"
+									+ "Cumple con los requisitos"  + "\n"
+									+ "Sueldo : " + sueldo  + "\n"
+									+ "Monto máximo : " + sueldo * 10 + "\n" 
+									+ "Monto Solicitado : " + montoCredito  + "\n"
+									+ "Tasa Mensual : 1,46%"  + "\n" 
+									+ "N° de Cuotas : " + cuotas   + "\n"
+									+ "Monto a pagar: " + (int)(montoCredito * 1.46) ;
 								}
 							}
 						}
