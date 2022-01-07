@@ -46,10 +46,12 @@ public class Principal {
 		
 		Veterinario v = new Veterinario();
 		v.setRut(16332489);
-		v.setDv('0');
+		v.setDv('K');
 		v.setNombre("Juan");
 		v.setApellido("Aros");
 		v.setCelular(41234123);
+		
+		
 		
 		if(v.verficarRut())
 		{
@@ -59,7 +61,7 @@ public class Principal {
 		}
 		else
 		{
-			System.out.println("Rut inválido");			
+			System.out.println("Rut está mal");			
 		}
 		
 	}

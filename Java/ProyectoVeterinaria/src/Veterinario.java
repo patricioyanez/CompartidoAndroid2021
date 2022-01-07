@@ -77,7 +77,7 @@ public class Veterinario {
 		for (;T!=0;T=(int) Math.floor(T/=10))
 		S=(S+T%10*(9-M++%6))%11;
 		String digito = ( S > 0 ) ? String.valueOf(S-1) : "k";
-		return digito.equalsIgnoreCase(""+dv); 
+		return digito.equalsIgnoreCase(""+dv);
 	}
 	
 	public boolean verificarFormatoCelular()
