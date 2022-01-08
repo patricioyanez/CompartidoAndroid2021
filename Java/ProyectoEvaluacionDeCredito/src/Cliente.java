@@ -11,7 +11,7 @@ public class Cliente {
 	private int sueldo;
 	private int antiguedadLaboral;
 	private boolean morosidad;
-	
+	private boolean tieneCtaCte;
 	
 	public Cliente() {
 		this.rut = 0;
@@ -25,10 +25,12 @@ public class Cliente {
 		this.sueldo = 0;
 		this.antiguedadLaboral = 0;
 		this.morosidad = false;
+		this.tieneCtaCte = false;
 	}
+
+	
 	public Cliente(int rut, char dv, String nombre, String apellido, int montoCredito, int cuotas, int edad,
-			boolean esChilena, int sueldo, int antiguedadLaboral, boolean morosidad) {
-		super();
+			boolean esChilena, int sueldo, int antiguedadLaboral, boolean morosidad, boolean tieneCtaCte) {
 		this.rut = rut;
 		this.dv = dv;
 		this.nombre = nombre;
@@ -40,8 +42,10 @@ public class Cliente {
 		this.sueldo = sueldo;
 		this.antiguedadLaboral = antiguedadLaboral;
 		this.morosidad = morosidad;
+		this.tieneCtaCte = tieneCtaCte;
 	}
-	
+
+
 	public int getRut() {
 		return rut;
 	}
@@ -107,6 +111,12 @@ public class Cliente {
 	}
 	public void setMorosidad(boolean morosidad) {
 		this.morosidad = morosidad;
+	}
+	public boolean isTieneCtaCte() {
+		return tieneCtaCte;
+	}
+	public void setTieneCtaCte(boolean tieneCtaCte) {
+		this.tieneCtaCte = tieneCtaCte;
 	}
 	
 	public String evaluarCredito()
