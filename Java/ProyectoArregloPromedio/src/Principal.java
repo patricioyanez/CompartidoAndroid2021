@@ -29,7 +29,7 @@ public static void main(String[] args) {
 		
 		notas[i] = lectura.nextInt(); //asginacion de valor
 		valor = valor + notas[i]; //suma de las notas
-	
+		//valor += notas[i]; 
 	}
 	
 	System.out.print("Las nostas son: ");
