@@ -19,17 +19,24 @@ public class Principal2 {
 			nombres[i] = lectura.next(); //asignación del nombre según indice actual
 		}
 		int mayor = 0;
+		int indice = 0;
+		String nombre ="";
 		for (int i = 0; i < nombres.length; i++) 
 		{			
 			if(mayor < nombres[i].length())	
 			{
+				indice = i;
+				nombre = nombres[i];
 				mayor = nombres[i].length();
 			}
 		}
-		
+		System.out.println("El nombre es: " + nombre);
+		System.out.println("El nombre es: " + nombres[indice]);
 		System.out.println("El nombre que tiene más caracteres es: " + mayor);
 		
-		// Mostrar el nombre que tiene más caracteres.
+		// Actividad 4: Mostrar el nombre que tiene más caracteres.
+		// investigación ¿Que son las colecciónes? y algunas diferencias con array
+		
 		
 	}
 
