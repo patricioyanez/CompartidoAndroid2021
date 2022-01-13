@@ -15,6 +15,8 @@ public class Colecciones {
 		ArrayList<Marca> marcas;
 		marcas = new ArrayList<Marca>();
 		
+		
+		
 		//agregar elemetos
 		nombres.add("Juan");
 		nombres.add("Juana"); // modificar por andrea

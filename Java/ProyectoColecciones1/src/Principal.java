@@ -1,9 +1,12 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Principal {
-
-	public static void main(String[] args) {
+											// agregar para el BufferedReader
+	public static void main(String[] args) throws IOException {
 		// Actividad 2:
 		// ingresar por consola los datos de varias marcas
 		// y almacenarlo en una colección
@@ -15,6 +18,11 @@ public class Principal {
 		// definir las variable/objetos
 		ArrayList<Marca> marcas = new ArrayList<Marca>();
 		Scanner leerTeclado = new Scanner(System.in);
+		
+		// para capturar texto con espacios--> importarlos.
+		InputStreamReader isr = new InputStreamReader(System.in);
+		BufferedReader br = new BufferedReader (isr);
+		
 		int opcion = 0;
 		
 		while(opcion!=3)
@@ -38,9 +46,16 @@ public class Principal {
 				System.out.println("\n||| ===== Ingreso de nombres de marca ===== ||||" );
 				System.out.print("Ingrese id    : ");
 				// captura el id (teclado) y se almacena en el obj
+				
+				
 				marca.setId(leerTeclado.nextInt()); 
 				System.out.print("Ingrese nombre: ");
-				marca.setNombre(leerTeclado.next());
+				
+				String nombre = br.readLine(); // para capturar texto con espacios
+				System.out.println(nombre);
+				
+				marca.setNombre(nombre);
+//				marca.setNombre(leerTeclado.next());
 				System.out.print("Esta activo   : ");
 				marca.setActivo(leerTeclado.nextBoolean());
 				
