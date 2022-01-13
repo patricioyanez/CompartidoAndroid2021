@@ -29,7 +29,7 @@ public class Marca {
 	}
 	public boolean isActivo() {
 		return activo;
-	}
+	} //oracle
 	public void setActivo(boolean activo) {
 		this.activo = activo;
 	}

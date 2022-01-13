@@ -9,7 +9,7 @@ public class Colecciones {
 		ArrayList<String> nombres;
 		nombres = new ArrayList<String>();
 		
-		ArrayList<Integer> numeros = new ArrayList<Integer>();		
+		ArrayList<Integer> numeros = new ArrayList<Integer>();
 		
 
 		ArrayList<Marca> marcas;
@@ -24,7 +24,7 @@ public class Colecciones {
 		
 		// Actividad 1: Como modifico y elimino un elemento de la colección.
 		// ¿Como saber la cantidad de elementos que tiene una coleccion?
-		System.out.println("Cantidad de elementos : " + nombres.size());
+		System.out.println("Cantidad de elementos : " + nombres.size()); // permite obtener la cantida de elementos de una colección
 		System.out.println("El nombre actual es   : " + nombres.get(1));
 		
 		nombres.set(1, "Andrea"); // modifica el valor		
