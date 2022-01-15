@@ -82,4 +82,12 @@ public class Mascota {
                         "\n" + this.dueno.mostrarDatos(); // toString()
         return datos;
     }
+    
+    public String reporteTelefonos()
+    {
+    	String datos = "Nombre de mascota : " + this.nombre +
+    				 "\nNombre de dueño   : " + this.dueno.getNombre() +
+    				 "\nTeléfono de dueño : " + this.dueno.getTelefono();
+    	return datos;
+    }
 }
