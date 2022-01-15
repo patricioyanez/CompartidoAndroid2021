@@ -18,12 +18,14 @@ public class Principal {
         
         mascotas.add(masco1);
         boolean existe = false; // no existe la mascota
+        
+        // recorrer la coleccion de mascotas
         for (Mascota aux : mascotas)
         {  
         	if (aux.getId() == masco2.getId())
         	{
 	        	existe = true;
-	        	break;
+	        	break; // cierra el ciclo for (termina de ejecutarse)
         	}
         }
         if(!existe)
@@ -51,6 +53,17 @@ public class Principal {
 		System.out.println("=== Mascota eliminada ===");
 		System.out.println(eliminado.mostrarDatos());
 		System.out.println("*** Cantidad de elementos en la colección son: " + mascotas.size());
+		
+		/* 
+		 * realizar el punto 6 del ejercicio mostrar nombre de
+		 * mascota y nombre del dueño y su telefono
+		 * 
+		 *  Leer Unidad 4 hererncia y polimorfismo.
+		 *  
+		 *  Avanzar en la evaluación disponible en la plataforma.
+		 *  
+		 */
+		
 		
 		
 	}
