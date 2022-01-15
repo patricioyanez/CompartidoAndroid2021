@@ -21,7 +21,7 @@ public class Principal {
 				break;
 			}
 		}
-		if(existe) // si no existe, pedir los datos
+		if(!existe) // si no existe, pedir los datos
 		{
 			// pedir datos
 		}

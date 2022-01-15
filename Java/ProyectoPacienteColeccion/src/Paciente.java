@@ -102,7 +102,8 @@ public class Paciente {
 		String datos = "|===== F I C H A  A T E N C I Ó N  M É D I C A =====| " + // toLowerCase()
 						"\nNombre paciente    : " + this.nombre.toUpperCase() + " " + this.apellido.toUpperCase() + 
 						"\nRut paciente       : " + this.rut + "-" + this.dv + 
-						"\nSeguro de salud    : " + this.seguroSalud
+						"\nSeguro de salud    : " + this.seguroSalud;
+		return datos;
 	}
 	public String fichaConsulta()
 	{
