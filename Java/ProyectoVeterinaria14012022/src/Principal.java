@@ -81,18 +81,12 @@ public class Principal {
 		 * Realizar el punto 6 del ejercicio mostrar nombre de
 		 * mascota y nombre del dueño y su telefono
 		 * 
-		 *  Leer Unidad 4 herencia y polimorfismo.
-		 *  
-		 *  Avanzar en la evaluación disponible en la plataforma.
+		 * Leer Unidad 4 herencia y polimorfismo.
+		 * Avanzar en la evaluación disponible en la plataforma.
 		 *  
 		 *  
 		 */
 
-		Integer nro1 = 10;
-		Integer nro2 = nro1;
-		Integer nro3 = nro2;
-		nro3 = 100;
-		System.out.println(nro1);
 	}
 
 }
