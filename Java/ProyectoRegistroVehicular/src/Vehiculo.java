@@ -16,14 +16,12 @@ public class Vehiculo {
 	
 	
 	public Vehiculo(String patente, String tipoCombustible, String numeroChasis, int ruedas, int capacidadPasajeros) {
-		super();
 		this.patente = patente;
 		this.tipoCombustible = tipoCombustible;
 		this.numeroChasis = numeroChasis;
 		this.ruedas = ruedas;
 		this.capacidadPasajeros = capacidadPasajeros;
 	}
-
 
 	public String getPatente() {
 		return patente;
@@ -88,14 +86,14 @@ public class Vehiculo {
 	{
 		return "El Vehiculo esta cargando " + this.tipoCombustible;
 	}
-
+	
 	public String mostrarDatos() {
 		return "\n==== Vehiculo ====" + 
-				"\npatente           = " + patente + 
-				"\ntipoCombustible   = " + tipoCombustible + 
-				"\nnumeroChasis      = " + numeroChasis + 
-				"\nruedas            = " + ruedas + 
-				"\ncapacidadPasajeros= " + capacidadPasajeros;
+				"\npatente           = " + this.patente + 
+				"\ntipoCombustible   = " + this.tipoCombustible + 
+				"\nnumeroChasis      = " + this.numeroChasis + 
+				"\nruedas            = " + this.ruedas + 
+				"\ncapacidadPasajeros= " + this.capacidadPasajeros; 
 	}
 	
 	
