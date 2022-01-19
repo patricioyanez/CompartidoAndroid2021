@@ -37,6 +37,15 @@ public class Tren extends Vehiculo {
 	{
 		return "El tren ha cambiado de carril";
 	}
-	
-	
+	@Override
+	public String mostrarDatos() {
+		return "====== Tren =======" +
+		"\nPatente               = " + super.getPatente() +
+		"\nTipo de Combustible   = " + super.getTipoCombustible() +
+		"\nNumero de Chasis      = " + super.getNumeroChasis() +
+		"\nCantidad de Ruedas    = " + super.getRuedas() +
+		"\nTipo de Tren          = " + this.getTipo() +
+		"\nCantidad de Vagones   = " + this.getCantidadVagones() +
+		"\nCapacidad de Pasajeros= " + super.getCapacidadPasajeros();
+	}
 }

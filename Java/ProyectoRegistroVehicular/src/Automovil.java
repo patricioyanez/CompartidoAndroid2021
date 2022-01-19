@@ -34,7 +34,13 @@ public class Automovil extends Vehiculo{
 	public void setCantidadAirBag(int cantidadAirBag) {
 		this.cantidadAirBag = cantidadAirBag;
 	}
-	
+	// sobre carga // overloading
+	public String encender() {
+		return "El Automovil enciende al girar al llave";
+	}
+	public String encender(int segundos) {
+		return "El Automovil enciende en " + segundos + " segundos";
+	}
 	public String encender(boolean tieneBoton, boolean usaEmbriague) {
 		if(!tieneBoton)
 			return "error al encender";
@@ -44,15 +50,7 @@ public class Automovil extends Vehiculo{
 		else
 			return "El Automovil enciende al presionar el freno";
 	}
-	// sobre carga // overloading
-	public String encender() {
-		return "El Automovil enciende al girar al llave";
-	}
-	public String encender(int segundos) {
-		return "El Automovil enciende en " + segundos + " segundos";
-	}
 
-	
 	@Override  // sobre escritura
 	public String mostrarDatos() {
 		return "===== Automóvil =====" + 
@@ -65,6 +63,5 @@ public class Automovil extends Vehiculo{
 				"\nCantidad de AirBag     = " + this.getCantidadAirBag();
 	}
 
-	
 	
 }

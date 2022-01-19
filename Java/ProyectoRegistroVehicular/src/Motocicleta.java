@@ -39,7 +39,18 @@ public class Motocicleta extends Vehiculo {
 	
 	public String accionarManeta()
 	{
-	return "Maneta accionada";
+		return "Maneta accionada";
 	}
 	
+	@Override //Sobre escritura
+	public String mostrarDatos() {
+		return " ==== Motocicleta ==== " +
+		"\n Patente                = " + super.getPatente() +
+		"\n Tipo de Combustible    = " + super.getTipoCombustible() +
+		"\n Numero de Chasis       = " + super.getNumeroChasis() +
+		"\n Ruedas                 = " + super.getRuedas() +
+		"\n Capacidad de Pasajeros = " + super.getCapacidadPasajeros() +
+		"\n Medida Manillar        = " + this.getMedidaManillar() + // this.esAutomatico
+		"\n Estilo                 = " + this.getEstilo();
+	}
 }
