@@ -1,0 +1,11 @@
+GitHub
+https://github.com/patricioyanez/CompartidoAndroid2021
+
+Canal resumen JAva
+https://www.youtube.com/watch?v=0zWsbZ8aqhw&list=PLk2rufbc0DMq2lsPolk3ZmFSSvmGkUw19
+
+
+
+Solid
+https://formiik.com/publicacion/principios-solid-en-programacion
+https://desarrollowp.com/blog/tutoriales/principios-solid-de-la-programacion-orientada-a-objetos/
