@@ -9,3 +9,6 @@ https://www.youtube.com/watch?v=0zWsbZ8aqhw&list=PLk2rufbc0DMq2lsPolk3ZmFSSvmGkU
 Solid
 https://formiik.com/publicacion/principios-solid-en-programacion
 https://desarrollowp.com/blog/tutoriales/principios-solid-de-la-programacion-orientada-a-objetos/
+
+Polimorfismo /sobrecarga / sobre escritura
+https://ifgeekthen.nttdata.com/es/polimorfismo-en-java-programaci%C3%B3n-orientada-objetos#:~:text=Un%20ejemplo%20cl%C3%A1sico%20de%20poliformismo,perros%20suenan%20de%20forma%20distinta).

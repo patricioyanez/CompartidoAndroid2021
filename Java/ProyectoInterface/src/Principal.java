@@ -2,6 +2,7 @@
 public class Principal {
 	public static void main(String [] args)
 	{
+		//ClaseAbstracta ca = new ClaseAbstracta();
 		Calculadora c = new Calculadora();
 		int resultado = c.sumar(10, 11);
 		System.out.println("El resultado es: " + resultado);

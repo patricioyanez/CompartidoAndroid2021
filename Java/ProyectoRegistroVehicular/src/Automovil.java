@@ -1,5 +1,5 @@
 
-public class Automovil extends Vehiculo{
+public class Automovil extends Vehiculo {
 	private boolean esAutomatico; //true / false
 	private int cantidadAirBag;
 	
@@ -35,6 +35,7 @@ public class Automovil extends Vehiculo{
 		this.cantidadAirBag = cantidadAirBag;
 	}
 	// sobre carga // overloading
+	
 	public String encender() {
 		return "El Automovil enciende al girar al llave";
 	}
@@ -42,6 +43,7 @@ public class Automovil extends Vehiculo{
 		return "El Automovil enciende en " + segundos + " segundos";
 	}
 	public String encender(boolean tieneBoton, boolean usaEmbriague) {
+		
 		if(!tieneBoton)
 			return "error al encender";
 		
