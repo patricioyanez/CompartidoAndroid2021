@@ -9,13 +9,13 @@ public class Motocicleta extends Vehiculo {
 
 	@Override
 	public int obtenerDescuento() {
-		// TODO Auto-generated method stub
-		return 0;
+		
+		return (int)(super.getCostoServicio() * IDescuento.DESCUENTO_MOTOCICLETA);
 	}
 
 	@Override
 	public int totalPorPagar() {
-		// TODO Auto-generated method stub
+		int resultado = getCostoServicio();
 		return 0;
 	}
 
