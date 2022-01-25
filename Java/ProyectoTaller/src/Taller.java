@@ -18,6 +18,16 @@ public class Taller {
 		vehiculos.add(vehiculo);
 		return true; //devuelve true para confirmar que se agregó
 	}
+	public String agregar(Vehiculo vehiculo, int x)
+	{
+		for(Vehiculo aux: vehiculos)
+		{
+			if(aux.getPatente().equalsIgnoreCase(vehiculo.getPatente()))
+				return "No se almaceno el vehiculo porque ya existe";// no lo agregar porque ya existe	 		
+		}
+		vehiculos.add(vehiculo);
+		return "Vehiculo " + vehiculo.getPatente() + " guardado con éxito"; //devuelve true para confirmar que se agregó
+	}
 	public String listar()
 	{
 		String datos = "";
@@ -41,4 +51,16 @@ public class Taller {
 		return "Existen:\n" + auto + " automóviles y " + moto + " motocicletas";
 	}
 	
+	public boolean eliminar(String patente)
+	{
+		for(Vehiculo aux: vehiculos)
+		{
+			if(aux.getPatente().equalsIgnoreCase(patente))
+			{
+				vehiculos.remove(aux);
+				return true;// Vehiculo de la patente encontrada fue eliminada
+			}			
+		}
+		return false; // no se encontó o no se elimino.
+	}
 }

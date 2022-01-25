@@ -9,3 +9,7 @@ https://www.youtube.com/watch?v=0zWsbZ8aqhw&list=PLk2rufbc0DMq2lsPolk3ZmFSSvmGkU
 Solid
 https://formiik.com/publicacion/principios-solid-en-programacion
 https://desarrollowp.com/blog/tutoriales/principios-solid-de-la-programacion-orientada-a-objetos/
+
+
+jUnit
+https://www.arquitecturajava.com/before-vs-beforeclass-en-junit/
