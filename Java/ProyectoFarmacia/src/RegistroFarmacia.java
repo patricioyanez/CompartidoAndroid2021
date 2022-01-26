@@ -17,7 +17,7 @@ public class RegistroFarmacia {
 				return "Producto ya existe.";
 		}		
 		productos.add(producto);
-		return "EL producto fue agregado";
+		return "El producto fue agregado";
 	}
 	public Producto buscarPorCodigo(int codigo)
 	{
@@ -45,10 +45,12 @@ public class RegistroFarmacia {
 			if(aux.getCodigo() == codigo)
 			{
 				productos.remove(aux);				
-				return "El producto fue eliminado";				
+				return "\n\n****** Producto eliminado *******\n" + 
+						aux.mostrar() + 
+						"\n*********************************";				
 			}
 		}		
 		return "Producto no encontrado";
 	}
-	
+
 }
