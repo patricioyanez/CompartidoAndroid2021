@@ -19,7 +19,7 @@ public class Suma {
 	
 	public long sumarVariosNumeros(long [] numeros)
 	{
-		int resultado = 0;
+		long resultado = 0;
 		for(long n: numeros)
 		{
 			resultado += n;

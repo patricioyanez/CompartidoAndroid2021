@@ -13,3 +13,4 @@ https://desarrollowp.com/blog/tutoriales/principios-solid-de-la-programacion-ori
 
 jUnit
 https://www.arquitecturajava.com/before-vs-beforeclass-en-junit/
+https://junit.org/junit4/javadoc/4.13/org/junit/Assert.html
