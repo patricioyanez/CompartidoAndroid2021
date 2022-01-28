@@ -59,4 +59,24 @@ public class SumaTest {
 		assertNotEquals(0, resultado);
 		System.out.println("Prueba Terminada...");
 	}
+	@Test
+	public void sumarAbsolutosTest3()
+	{
+	System.out.println("Iniciando Prueba...");
+	int n1 = -40;
+	int n2 = -50;
+	Suma suma = new Suma();
+	int resultado = suma.sumarAbsolutos(n1, n2);
+	assertNotSame(100, resultado);
+	System.out.println("Prueba Terminada...");
+	}
+	@Test
+	public void sumar2NumerosTest3()
+	{
+	System.out.println("Ejecutando prueba");
+	Suma suma = new Suma();
+	int resultado = suma.sumar2Numeros(20, 30);
+	assertSame(50, resultado);
+
+	}
 }

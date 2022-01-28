@@ -3,6 +3,7 @@ package Testing;
 import static org.junit.Assert.*;
 
 import org.junit.After;
+import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -13,10 +14,14 @@ public class SumaTest2 {
 	static Suma suma;
 	@BeforeClass
 	public static void beforeClass() {
-		System.out.println("****** Iniciando pruebas");
+		System.out.println("****** Iniciando pruebas ********");
 		suma = new Suma();
 	}
-
+	@AfterClass
+	public static void afterClass() {
+		System.out.println("****** Termino de las pruebas ********");
+		suma = null;
+	}
 	@Before
 	public void sumar2NumerosResultadoTestBefore() {
 		System.out.println("Iniciando prueba");
@@ -24,7 +29,6 @@ public class SumaTest2 {
 	@After
 	public void sumar2NumerosResultadoTestAfter() {
 		System.out.println("Prueba Terminada...");
-//		suma = null;
 	}
 
 	@Test
