@@ -11,7 +11,7 @@ public class Automovil {
 	private int precio;
 	
 	// constructores
-	public Automovil() // sin parametros
+	public Automovil() // sin parametros // new Automovil()
 	{
 		this.patente = "";
 		this.numeroMotor = "";
@@ -87,7 +87,7 @@ public class Automovil {
 		this.precio = precio;
 	}
 	
-	// metodos personalizados	
+	// metodos personalizado/	 customer
 	
 	public int aplicarImpuestos()
 	{
@@ -104,4 +104,20 @@ public class Automovil {
 		total *= 1.19; // IVA
 		return total;
 	}
+	
+	public String ObtenerTodosLosDatos()
+	{
+		String datos = "****** Datos del vehículo *******";
+		datos += "\nPatente			: " + this.patente;
+		datos += "\nNumero Motor        	: " + this.numeroMotor;
+		datos += "\nNumero Chasis       	: " + this.numeroChasis;
+		datos += "\nCilindradas        	: " + this.cilindradas;
+		datos += "\nPuertas        		: " + this.puertas;
+		datos += "\nEncendido Electronico	: " + this.encendidoElectronico;
+		datos += "\nTipo Combustible    	: " + this.tipoCombustible;
+		datos += "\nPrecio        		: " + this.precio;
+		
+		return datos;
+	}
+	
 }
