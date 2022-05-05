@@ -4,7 +4,7 @@ public class Banco {
 	String direccion;
 	Cliente cliente1;
 	Cliente cliente2;
-	Cliente cliente3;
+	Cliente cliente3; //lista arraylist n clientes
 
 	public Banco(Cliente cliente1, Cliente cliente2, Cliente cliente3)
 	{
